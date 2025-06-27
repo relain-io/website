@@ -1,14 +1,6 @@
 import { FiArrowRight, FiMapPin, FiClock, FiCheck } from 'react-icons/fi';
 import { useLanguage } from '../contexts/LanguageContext';
 
-interface JobPosition {
-  title: string;
-  location: string;
-  type: string;
-  description: string;
-  requirements: string[];
-}
-
 const getJobs = (t: (key: string, options?: { returnObjects: boolean }) => any) => [
   {
     title: t('jobs.cloud.title'),
@@ -86,7 +78,7 @@ export default function Jobs() {
                           {t('jobs.requirements')}
                         </h4>
                         <ul className="space-y-2">
-                          {job.requirements.map((requirement, idx) => (
+                          {job.requirements.map((requirement: string, idx: number) => (
                             <li key={idx} className="flex gap-2 text-gray-600 text-sm">
                               <FiCheck className="w-5 h-5 text-green-500 flex-shrink-0" />
                               <span>{requirement}</span>

@@ -74,7 +74,14 @@ const FloatingElements = () => (
 );
 
 // Feature cards
-const FeatureCard = ({ icon: Icon, title, description, delay }) => (
+interface FeatureCardProps {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  delay: string;
+}
+
+const FeatureCard = ({ icon: Icon, title, description, delay }: FeatureCardProps) => (
   <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 animate-fadeInUp" style={{ animationDelay: delay }}>
     <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
       <Icon className="w-5 h-5 text-blue-600" />

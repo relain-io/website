@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck } from 'react-icons/fi';
+import { FiMail, FiPhone, FiSend, FiCheck } from 'react-icons/fi';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Contact() {

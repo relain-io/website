@@ -72,7 +72,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item, index) => (
+          {navigation.map((item) => (
             <Link
               key={item.name}
               to={item.to}
@@ -139,7 +139,7 @@ export default function Navbar() {
           <div className="mt-8 flow-root">
             <div className="-my-6 divide-y divide-gray-100">
               <div className="space-y-1 py-6">
-                {navigation.map((item, idx) => (
+                {navigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.to}

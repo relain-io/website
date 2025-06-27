@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { useLanguage } from '../contexts/LanguageContext';
 
-const getServices = (t: (key: string) => string) => [
+const getServices = (t: (key: string, options?: { returnObjects: boolean }) => any) => [
   {
     name: t('services.cloud.name'),
     description: t('services.cloud.description'),
@@ -20,7 +20,7 @@ const getServices = (t: (key: string) => string) => [
         />
       </svg>
     ),
-    features: t('services.cloud.features', { returnObjects: true }),
+    features: t('services.cloud.features', { returnObjects: true }) as string[],
   },
   {
     name: t('services.containers.name'),
@@ -40,7 +40,7 @@ const getServices = (t: (key: string) => string) => [
         />
       </svg>
     ),
-    features: t('services.containers.features', { returnObjects: true }),
+    features: t('services.containers.features', { returnObjects: true }) as string[],
   },
   {
     name: t('services.devops.name'),
@@ -60,7 +60,7 @@ const getServices = (t: (key: string) => string) => [
         />
       </svg>
     ),
-    features: t('services.devops.features', { returnObjects: true }),
+    features: t('services.devops.features', { returnObjects: true }) as string[],
   },
   {
     name: t('services.security.name'),
@@ -80,7 +80,7 @@ const getServices = (t: (key: string) => string) => [
         />
       </svg>
     ),
-    features: t('services.security.features', { returnObjects: true }),
+    features: t('services.security.features', { returnObjects: true }) as string[],
   },
 ];
 
@@ -128,7 +128,7 @@ export default function Services() {
                 
                 <div className="mt-auto">
                   <ul className="space-y-3">
-                    {service.features.map((feature, index) => (
+                    {service.features.map((feature: string, index: number) => (
                       <li key={index} className="flex gap-x-3 text-sm text-gray-600">
                         <svg
                           className="h-5 w-5 flex-none text-blue-600"
