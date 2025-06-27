@@ -1,2 +1,2 @@
 # website
-Public-facing website @ www.relain.io
+Public-facing website @ www.relain.io.
