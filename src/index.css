@@ -1,6 +1,63 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f4f7fb;
+  --color-brand-100: #e9eff7;
+  --color-brand-200: #cedeed;
+  --color-brand-300: #a3c3dd;
+  --color-brand-400: #72a3ca;
+  --color-brand-500: #4f86b4;
+  --color-brand-600: #3d6c97;
+  --color-brand-700: #33577b;
+  --color-brand-800: #2d4a66;
+  --color-brand-900: #293e56;
+  --color-brand-950: #1b2737;
+  
+  --color-accent-50: #f0fdfa;
+  --color-accent-100: #ccfbf1;
+  --color-accent-200: #99f6e4;
+  --color-accent-300: #5eead4;
+  --color-accent-400: #2dd4bf;
+  --color-accent-500: #14b8a6;
+  --color-accent-600: #0d9488;
+  --color-accent-700: #0f766e;
+  --color-accent-800: #115e59;
+  --color-accent-900: #134e4a;
+  --color-accent-950: #042f2e;
+  
+  --color-dark-100: #1e1e1e;
+  --color-dark-200: #2d2d2d;
+  --color-dark-300: #3d3d3d;
+  --color-dark-400: #4d4d4d;
+  --color-dark-500: #5d5d5d;
+  
+  --font-sans: 'Inter var', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter var', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+  --animate-slide-down: slide-down 0.5s ease-out;
+  
+  /* Dark mode configuration */
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-down {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
 
 @layer base {
   :root {
@@ -55,7 +112,10 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-600;
+    background: linear-gradient(to right, #1d4ed8, #4f46e5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
