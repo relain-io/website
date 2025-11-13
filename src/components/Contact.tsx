@@ -88,8 +88,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-gray-900">{t('contact.phone')}</p>
-                    <a href="tel:+4989123456789" className="text-gray-600 hover:text-blue-600 transition-colors">
-                      +49 89 123 456 789
+                    <a href="tel:+498954197499" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      +49 89 54197499
                     </a>
                   </div>
                 </div>

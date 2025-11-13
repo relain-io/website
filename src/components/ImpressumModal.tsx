@@ -36,7 +36,7 @@ export default function ImpressumModal({ isOpen, onClose }: ImpressumModalProps)
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-2xl bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-2xl bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl sm:p-6 max-h-[90vh] overflow-y-auto">
                 <div>
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title
@@ -61,7 +61,7 @@ export default function ImpressumModal({ isOpen, onClose }: ImpressumModalProps)
                         <h4 className="text-lg font-semibold text-brand-900 mb-2">
                           {t('impressum.contact')}
                         </h4>
-                        <p className="text-brand-600">
+                        <p className="text-brand-600 whitespace-pre-line">
                           {t('impressum.contact.email')}
                           {'\n'}
                           {t('impressum.contact.phone')}
@@ -72,12 +72,23 @@ export default function ImpressumModal({ isOpen, onClose }: ImpressumModalProps)
                         <h4 className="text-lg font-semibold text-brand-900 mb-2">
                           {t('impressum.legal')}
                         </h4>
-                        <p className="text-brand-600">
+                        <p className="text-brand-600 whitespace-pre-line">
+                          {t('impressum.legal.managing')}
+                          {'\n\n'}
                           {t('impressum.legal.register')}
                           {'\n'}
-                          {t('impressum.legal.vat')}
+                          {t('impressum.legal.register_court')}
                           {'\n'}
-                          {t('impressum.legal.managing')}
+                          {t('impressum.legal.vat')}
+                        </p>
+                      </div>
+
+                      <div>
+                        <h4 className="text-lg font-semibold text-brand-900 mb-2">
+                          {t('impressum.responsible')}
+                        </h4>
+                        <p className="text-brand-600 whitespace-pre-line">
+                          {t('impressum.responsible.text')}
                         </p>
                       </div>
                     </div>

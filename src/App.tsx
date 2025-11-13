@@ -7,7 +7,7 @@ import Technologies from './components/Technologies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Jobs from './components/Jobs';
-import PasswordProtection from './components/PasswordProtection';
+// import PasswordProtection from './components/PasswordProtection';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <PasswordProtection>
+    // <PasswordProtection>
       <LanguageProvider>
         <div className="min-h-screen bg-white">
           <Navbar />
@@ -43,6 +43,6 @@ export default function App() {
           <Footer />
         </div>
       </LanguageProvider>
-    </PasswordProtection>
+    // </PasswordProtection>
   );
 }
