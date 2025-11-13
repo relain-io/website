@@ -59,8 +59,8 @@ export default function Footer() {
       },
       { 
         icon: FiPhone,
-        content: '+49 123 456 789',
-        href: 'tel:+49123456789'
+        content: '+49 89 54197499',
+        href: 'tel:+498954197499'
       }
     ]
   };

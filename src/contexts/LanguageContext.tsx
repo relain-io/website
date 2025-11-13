@@ -423,7 +423,7 @@ const translations = {
     'impressum.company.address': 'Südliche Münchner Str. 60c\n82031 Grünwald\nDeutschland',
     'impressum.contact': 'Kontakt',
     'impressum.contact.email': 'E-Mail: info@relain.io',
-    'impressum.contact.phone': 'Telefon: +49 89 123 456 789',
+    'impressum.contact.phone': 'Telefon: +49 89 54197499',
     'impressum.legal': 'Rechtliche Angaben',
     'impressum.legal.managing': 'Geschäftsführer: Philipp Müller, Daniel Sel',
     'impressum.legal.register': 'Handelsregister: HRB 291534',
