@@ -13,7 +13,8 @@ export default function Footer() {
     main: [
       { name: t('footer.about'), href: 'about' },
       { name: t('footer.services'), href: 'services' },
-      { name: t('footer.jobs'), href: 'jobs' },
+      // Jobs section disabled - uncomment to re-enable
+      // { name: t('footer.jobs'), href: 'jobs' },
       { name: t('footer.contact'), href: 'contact' },
     ],
     social: [

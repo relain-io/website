@@ -6,7 +6,8 @@ import Services from './components/Services';
 import Technologies from './components/Technologies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Jobs from './components/Jobs';
+// Jobs section disabled - uncomment to re-enable
+// import Jobs from './components/Jobs';
 // import PasswordProtection from './components/PasswordProtection';
 import { LanguageProvider } from './contexts/LanguageContext';
 
@@ -33,9 +34,10 @@ export default function App() {
             <section id="technologies" className="mb-0">
               <Technologies />
             </section>
-            <section id="jobs" className="mb-0">
+            {/* Jobs section disabled - uncomment to re-enable */}
+            {/* <section id="jobs" className="mb-0">
               <Jobs />
-            </section>
+            </section> */}
             <section id="contact" className="mb-0">
               <Contact />
             </section>

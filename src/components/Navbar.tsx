@@ -10,7 +10,8 @@ const navigation = [
   { name: 'nav.services', to: 'services' },
   { name: 'nav.about', to: 'about' },
   { name: 'nav.technologies', to: 'technologies' },
-  { name: 'nav.jobs', to: 'jobs' },
+  // Jobs section disabled - uncomment to re-enable
+  // { name: 'nav.jobs', to: 'jobs' },
   { name: 'nav.contact', to: 'contact' },
 ];
 
